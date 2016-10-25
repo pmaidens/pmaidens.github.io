@@ -1,0 +1,330 @@
+/*
+The MIT License (MIT)
+Copyright (c) 2016 Peter Maidens
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+section {
+	margin: 0 5% 0 5%;
+}
+
+.home {
+	height: 100%;
+	min-height: 100%;
+	margin: 0 0 5% 0;
+	background-color: #222;
+}
+
+.home .home-background {
+	position: relative;
+	top: 0;
+	left: 0;
+	background: url("images/kananaskis.jpg") center center no-repeat fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.home .home-background .spacer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home .home-background .spacer .content {
+	position: relative;
+	top: 50%;
+	padding: 0 25px;
+	text-align: center;
+	color: white;
+	transform: translateY(-50%);
+}
+
+.home .home-background .spacer .content .title span,
+.home .home-background .spacer .content .subtitle span {
+	/*white-space: nowrap;*/
+}
+
+.home .home-background .spacer .content .subtitle a {
+	color: inherit;
+}
+
+.home .home-background .spacer .content .title {
+	font-size: 4em;
+	margin: 0;
+}
+
+.home .home-background .spacer .content .subtitle {
+	font-size: 1.5em;
+	color: #CCC
+}
+
+.home .home-background .continue-arrow {
+	position: absolute;
+	width: 100%;
+	bottom: 2%;
+	color: #999;
+	top: auto;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.home .home-background .continue-arrow a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.home .home-background .continue-arrow a .down-arrow {
+	margin-top: 0.2em;
+	font-size: 1.5em;
+}
+
+.home .home-background .continue-arrow span {
+	display: block;
+}
+.home .home-background .continue-arrow a:hover span.link {
+	text-decoration: underline;
+}
+
+.panel-primary .panel-heading {
+	border-bottom: 1px solid #999999;
+}
+
+.panel-primary .panel-body {
+	background-color: #222222;
+	color: #888888;
+}
+
+.panel-title {
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.info .panel-body {
+	display: flex;
+}
+
+.photo-frame {
+	margin: 10px;
+	width: 15em;
+}
+
+.photo-frame img {
+	/*width: inherit;*/
+}
+
+.facts {
+	list-style-type: none;
+	padding: 0 2em 0 0;
+	margin: 0em;
+}
+
+.facts .fact h4 {
+	border-bottom: 1px solid #888888
+}
+
+.facts .fact a {
+	color:inherit;
+}
+
+.email {
+	unicode-bidi:bidi-override;
+	direction: rtl;
+}
+
+.quick-facts {
+	margin: 0 1em 3em;
+}
+
+.quick-facts .quick-facts-heading {
+	border-bottom: 1px solid #999999;
+	font-weight: bolder;
+	font-size: 2em;
+}
+.quick-facts .quick-facts-title {
+	font-weight: bolder;
+	font-size: 1.2em;
+	color: white;
+}
+
+.quick-facts .quick-facts-body {
+	background-color: #222222;
+	color: #888888;
+	padding: 10px 0;
+}
+
+.quick-facts .blurb {
+	background-color: #CCC;
+	padding: 0em 2em 1em;
+	color: #222;
+	margin-right: 25px;
+}
+
+.info .media {
+	margin-top: 0px;
+}
+
+.quick-facts {
+	background-color: #222;
+	padding: 0 20px 10px 20px;
+}
+
+.quick-facts .blurb h4 {
+	font-weight: bolder;
+}
+
+.family img {
+	/*width: 49.5%;*/
+}
+
+.resume img {
+	width: 20%;
+}
+
+.flex {
+	display: flex;
+}
+
+.resume {
+	padding-left: 0px;
+}
+
+.sidebar-wrapper {
+	height: 100%;
+}
+
+.ualberta .classes {
+	background-color: #222;
+	color: white;
+}
+
+.ualberta .classes .title {
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+
+.ualberta .classes .row {
+	padding: .5em 0;
+}
+
+.ualberta .classes .row {
+    border-bottom: 1px solid #444;
+}
+
+.ualberta .classes .body .row:last-child {
+    border-bottom: none;
+}
+
+.ualberta .classes .row .element {
+	color: #888888;
+}
+
+.bolder {
+	font-weight: bolder;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+p {
+	padding: 0 15px;
+}
+
+.image-container {
+	padding: 0 0 1em;
+}
+
+.image-container img:first-child {
+	padding: 0 0.25em 0 0;
+}
+
+.image-container img:last-child {
+	padding: 0 0 0 0.25em;
+}
+
+.row img {
+	width: 100%;
+}
+
+.footer {
+	margin: 5em 0 0;
+	background-color: #222;
+	color: white;
+	padding: 0em 0;
+}
+
+.footer a {
+	color: inherit;
+	display: block;
+}
+
+.footer .container-fluid {
+	margin: 3em 0;
+}
+
+.footer .title {
+	color: #999
+}
+
+.footer .social {
+	font-size: 1.5em;
+	margin-bottom: 4em;
+}
+
+.footer .social .social-icon {
+	margin: 0 0.2em;
+}
+
+a.social-icon {
+	width: 1.3em;
+	height: 1.3em;
+	text-decoration: none;
+	background-color: white;
+	color: #222;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.4em;
+	padding: 0.1em 0;
+	border-radius: 0.3em;
+}
+
+.facts .social-icon {
+	margin: 0 auto;
+}
+
+a.social-icon.social-icon-grey {
+	background-color: #888;
+	color: #222;
+}
