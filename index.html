@@ -20,22 +20,19 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Peter Maidens</title>
-
+    <link href="reset.css" rel="stylesheet" />
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
     <link href="good.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -70,41 +67,35 @@ SOFTWARE.
             </div>
         </div>
     </nav>
-
-
     <section id="home" class="home">
-        <div class="home-background">
-            <div class="spacer">
-                <div class="content">
-                    <h1 class="title"><span>Hi there!</span> <span>I'm Peter Maidens!</span></h1>
-                    <div class="subtitle">Father, Entrepreneur, and Software Developer Extraordinaire!</div>
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="title"><span>Hi there!</span> <span>I'm Peter Maidens!</span></h1>
+            <div class="subtitle">Father, Entrepreneur, and Software Developer Extraordinaire!</div>
+        </div>
+        <div class="continue-arrow">
+            <a href="#aboutMe">
+                <div class="highlight">
+                    <span class="chevron-down glyphicon glyphicon-chevron-down" aria-hidden="true" />
                 </div>
-            </div>
-            <div class="continue-arrow">
-                <a href="#aboutMe">
-                    <span class="link">Learn something else you didn't know!</span>
-                    <span class="down-arrow glyphicon glyphicon-arrow-down" aria-hidden="true" />
-                </a>
-            </div>
+            </a>
         </div>
     </section>
-
-
     <section id="aboutMe" class="aboutMe">
         <div id="myInfo" class="personal">
-            <div class="info container-fluid">
+            <div class="info">
                 <h2>So you want to know more about me...</h2>
-                <div class="row quick-facts">
+                <div class="container-fluid quick-facts">
                     <div class="row quick-facts-heading">
                         <h3 class="quick-facts-title col-md-12">Quick Facts</h2>
                     </div>
-                    <div class="row quick-facts-body flex">
-                        <div class="photo-frame col-md-2">
+                    <div class="row quick-facts-body container-fluid">
+                        <div class="photo-frame col-sm-2 hidden-sm hidden-xs">
                             <img class="headshot img-responsive" src="images/Peter Headshot.jpg" alt="Headshot of Peter" />
                         </div>
-                        <div class="col-md-10">
-                            <div class="row flex">
-                                <ul class="col-md-4 facts">
+                        <div class="col-sm-10 container-fluid">
+                            <div class="row">
+                                <ul class="col-sm-4 facts">
                                     <li class="fact">
                                         <h4 class="subject">Location</h4>
                                         <a href="https://goo.gl/maps/4z5XPyna2JB2" target="_blank"><span class="content">Edmonton, Alberta, Canada</span></a>
@@ -119,7 +110,14 @@ SOFTWARE.
                                     </li>
                                     <li class="fact">
                                         <h4 class="subject">Best Way to Contact Me</h4>
-                                        <span class="content email">moc.<span style="display:none;" aria-hidden="true">ima@scraperbot.com</span>snediamp@retep</span>
+                                        <a
+                                            href="http://www.google.com/recaptcha/mailhide/d?k=01HweekZegb-EaXtU-9yoPHg==&amp;c=GZsTezavCEZNdzB3n4OfLA_vFz5icPXhkkVwJWqJNjE="
+                                            onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01HweekZegb-EaXtU-9yoPHg\x3d\x3d\x26c\x3dGZsTezavCEZNdzB3n4OfLA_vFz5icPXhkkVwJWqJNjE\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;"
+                                            title="Reveal this e-mail address"
+                                        >
+                                            I hate spam, so click here to prove to me
+                                            that you aren't a robot... Then we can talk.
+                                        </a>
                                     </li>
                                     <li class="fact">
                                         <h4 class="subject">Social Media</h4>
@@ -136,17 +134,25 @@ SOFTWARE.
                                             <a class="social-icon social-icon-grey" href="https://github.com/pmaidens" target="_blank">
                                                 <div class="socicon-github"></div>
                                             </a>
+
+                                            <a class="social-icon social-icon-grey" href="https://steamcommunity.com/id/banillygoat" target="_blank">
+                                                <div class="socicon-steam"></div>
+                                            </a>
+                                            <a class="social-icon social-icon-grey" href="https://my.playstation.com/gyrocopter" target="_blank">
+                                                <div class="socicon-playstation"></div>
+                                            </a>
                                         </span>
                                     </li>
                                 </ul>
-                                <div class="col-md-8 blurb">
+                                <div class="col-sm-8 blurb">
                                     <h4>Well,</h4>
                                     <div>
                                         I'm a <span id="age"></span> year old software
                                         developer by day, father and husband during the
-                                        evenings, and entrepreneur by night. I keep
-                                        myself pretty busy, but that is the way I like
-                                        it. I am a highly motivated individual with a
+                                        evenings, and entrepreneur by night (Sleep? Who
+                                        does that?). I keep myself pretty busy, but
+                                        that is the way I like it. I am a highly
+                                        motivated individual with a
                                         <i>"go-go-go"</i> attitude, and love building
                                         products that customers will love. I like being
                                         part of a high-performing team, and I love
@@ -155,18 +161,18 @@ SOFTWARE.
                                         an email or look me up on social media.
                                     </div>
                                 </div>
+                                <div class="clearfix">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
             <div id="familyLife" class="family">
                 <h2>Me and My Family</h2>
                 <div class="container-fluid image-container">
-                    <img class="col-md-6 col-xs-6" src="images/Family.jpg" alt="The Maidens Family"/>
-                    <img class="col-md-6 col-xs-6" src="images/Wedding.jpg" alt="Wedding Picture"/>
+                    <img class="col-sm-6 col-xs-12" src="images/Family.jpg" alt="The Maidens Family"/>
+                    <img class="col-sm-6 col-xs-12" src="images/Wedding.jpg" alt="Wedding Picture"/>
                 </div>
                 <p>
                     The only way you could accuse me of being a work-a-holic,
@@ -194,6 +200,7 @@ SOFTWARE.
                 </p>
             </div>
         </div>
+        <hr />
         <div class="container-fluid no-padding">
             <div id="resume" class="resume col-md-9">
                 <h2>My Resum&#233</h2>
@@ -219,12 +226,12 @@ SOFTWARE.
                             the <b>Single Page Application</b> frontend and developed
                             RESTful backend services. Scalability is always a
                             concern when developing applications for over 1 million
-                            users, and my work on <b>QBO</b> taught me how to
+                            users, and my work on QBO taught me how to
                             develop software in a scalable way.
                         </p>
                         <p>
                             Intuit also taught me a lot about teamwork. Hundreds of
-                            developers work on <b>QBO</b>, and scrum teams were
+                            developers work on QBO, and scrum teams were
                             often swarming around a single task. This meant that
                             good communication with people on your team, as well as
                             people across the globe was critical. I also learned how
@@ -256,34 +263,34 @@ SOFTWARE.
                         leadership, and interpersonal skills. With my business
                         coarses, I focused on topics surrounding leadership and
                         entrepreneuship, which gave me great exposure to important
-                        topics for any business, such as team building and
-                        innovation catalyzation.
+                        topics for any business, such as team building and how to
+                        innovate.
                     </p>
                     <div class="container-fluid classes">
                         <div class="row">
-                            <div class="col-md-12 title">Some of my favorite classes were:</div>
+                            <div class="col-xs-12 title">Some of my favorite classes were:</div>
                         </div>
                         <div class="row">
                             <div class="container-fluid body">
                                 <div class="row">
-                                    <div class="element col-md-6">CMPUT 296 &amp 297: Honors Foundations of Computing 1 &amp 2</div>
-                                    <div class="element col-md-6">SMO 402: Management Skills for Supervisors and Leaders</div>
+                                    <div class="element col-xs-6">CMPUT 296 &amp 297: Honors Foundations of Computing 1 &amp 2</div>
+                                    <div class="element col-xs-6">SMO 330: Introduction to Entreprenurship</div>
                                 </div>
                                 <div class="row">
-                                    <div class="element col-md-6">CMPUT 301: Introduction to Software Engineering</div>
-                                    <div class="element col-md-6">SMO 404: Interpersonal Communication and Team Management</div>
+                                    <div class="element col-xs-6">CMPUT 301: Introduction to Software Engineering</div>
+                                    <div class="element col-xs-6">SMO 402: Management Skills for Supervisors and Leaders</div>
                                 </div>
                                 <div class="row">
-                                    <div class="element col-md-6">CMPUT 391: Database Management Systems</div>
-                                    <div class="element col-md-6">SMO 407: Effective Team Management</div>
+                                    <div class="element col-xs-6">CMPUT 404: Web-Based Applications and Architecture</div>
+                                    <div class="element col-xs-6">SMO 404: Interpersonal Communication and Team Management</div>
                                 </div>
                                 <div class="row">
-                                    <div class="element col-md-6">CMPUT 429: Computer Systems and Architecture</div>
-                                    <div class="element col-md-6">SMO 437: Managing Culture</div>
+                                    <div class="element col-xs-6">CMPUT 429: Computer Systems and Architecture</div>
+                                    <div class="element col-xs-6">SMO 407: Effective Team Management</div>
                                 </div>
                                 <div class="row">
-                                    <div class="element col-md-6">CMPUT 481: Parallel and Distributed Systems</div>
-                                    <div class="element col-md-6"></div>
+                                    <div class="element col-xs-6">CMPUT 481: Parallel and Distributed Systems</div>
+                                    <div class="element col-xs-6">SMO 437: Managing Culture</div>
                                 </div>
                             </div>
                         </div>
@@ -332,6 +339,14 @@ SOFTWARE.
                         and not stooping to immoral sales tactics, I reinforced my
                         confidence and my moral fortitude.
                     </p>
+                    <p>
+                        The days of software developers sitting in a cubicle
+                        all alone are over; software development has more of a team
+                        activity than most other careers. The soft skills that I
+                        developed while working sales are an invaluable part of
+                        my skill set, and make me a significantly more effective
+                        team member and programmer.
+                    </p>
                 </div>
             </div>
             <nav class="sidebar-wrapper col-md-3">
@@ -359,9 +374,8 @@ SOFTWARE.
                     </div>
                 </div>
             </nav>
-            <div class="clearfix" />
         </div>
-        <div class="clearfix" />
+        <hr />
     </section>
     <section id="myWork" class="aboutWork clearfix">
         <div class="content inline">
@@ -400,31 +414,29 @@ SOFTWARE.
             </div>
         </div>
     </section>
-
-
     <section class="footer">
         <div class="clearfix"/>
         <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col-md-2 col-md-offset-4">
+            <div class="row hidden-xs">
+                <div class="col-sm-2 col-sm-offset-4">
                     <div class="title">About me</div>
                 </div>
-                <div class="col-md-2 col-md-offset-2">
+                <div class="col-sm-2 col-sm-offset-2">
                     <div class="title">External Resources</div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 col-md-offset-2">
+                <div class="col-sm-2 col-sm-offset-2">
                     <a href="#home">Home</a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-sm-2">
                     <a href="#home">My Life</a>
                     <a href="#home">My Resum&#233</a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-sm-2">
                     <a href="#home">Working For You</a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-sm-2">
                     <a href="https://quickbooks.intuit.com" target="_blank">Quickbooks Online</a>
                     <a href="https://github.com/pmaidens" target="_blank">Github</a>
                 </div>
@@ -443,9 +455,6 @@ SOFTWARE.
             <a class="social-icon" href="https://github.com/pmaidens" target="_blank">
                 <div class="socicon-github"></div>
             </a>
-            <a class="social-icon" href="https://ello.co/pmaidens" target="_blank">
-                <div class="socicon-ello"></div>
-            </a>
             <a class="social-icon" href="https://steamcommunity.com/id/banillygoat" target="_blank">
                 <div class="socicon-steam"></div>
             </a>
@@ -454,7 +463,6 @@ SOFTWARE.
             </a>
         </div>
     </section>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -464,7 +472,7 @@ SOFTWARE.
             var today = new Date();
             var age = today.getFullYear() - birthDate.getFullYear();
             var month = today.getMonth() - birthDate.getMonth();
-            if (month < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
                 age--;
             }
             return age;

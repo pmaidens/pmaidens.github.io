@@ -1,0 +1,271 @@
+/*
+The MIT License (MIT)
+Copyright (c) 2016 Peter Maidens
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+html {
+   height: 100%;
+   width: 100%;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+p {
+	padding: 0 15px;
+}
+
+a.social-icon {
+	width: 1.3em;
+	height: 1.3em;
+	text-decoration: none;
+	background-color: white;
+	color: #222;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.4em;
+	padding: 0.1em 0;
+	border-radius: 0.3em;
+   &.social-icon-grey {
+   	background-color: #888;
+   	color: #222;
+   }
+}
+
+.flex {
+	display: flex;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.row img {
+	width: 100%;
+}
+
+section {
+   margin: 0 5%;
+   &.home {
+      margin: 0;
+      min-height: 100%;
+      height: 100%;
+      background: url("images/kananaskis.jpg") center center no-repeat fixed;
+      background-color: #444;
+      overflow:visible;
+      .overlay {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         background: rgba(0,0,0,0.5);
+      }
+      .content {
+         position: relative;
+         text-align: center;
+         top: 50%;
+         transform: translateY(-50%);
+         color: white;
+         .title {
+            margin: 0 20px;
+            font-size: 4em;
+         }
+         .subtitle {
+            color: #CCC;
+            font-size: 1.5em;
+         }
+      }
+
+      .continue-arrow {
+         position: absolute;
+         bottom: 0;
+         padding: 20px 0;
+         width: 100%;
+         &:hover {
+            .highlight {
+               background-color: rgba(256,256,256,0.2);
+            }
+         }
+         .highlight {
+            border-radius: 48px;
+            width: 96px;
+            margin: auto;
+            .chevron-down {
+               padding: 40px 0;
+            	color: #999;
+            	font-size: 16px;
+               width: 100%;
+               text-align: center;
+               left: 1px;
+            }
+         }
+      }
+   }
+   &.aboutMe {
+      .info {
+         padding: 0;
+         .quick-facts {
+         	margin: 0 1em 3em;
+            background-color: #222;
+            padding: 0 20px 10px 20px;
+            .quick-facts-heading {
+            	border-bottom: 1px solid #999999;
+            	font-weight: bolder;
+            	font-size: 2em;
+               .quick-facts-title {
+               	font-weight: bolder;
+               	font-size: 1.2em;
+               	color: white;
+               }
+            }
+            .quick-facts-body {
+            	background-color: #222222;
+            	color: #888888;
+            	padding: 10px 15px;
+               .facts {
+               	list-style-type: none;
+               	// padding: 0 2em 0 0;
+               	// margin: 0em;
+                  .fact {
+                     h4 {
+                        border-bottom: 1px solid #888888;
+                     }
+                     a:not(.social-icon) {
+                        color:inherit;
+                     }
+                     .social-icon {
+                     	margin: 0 auto;
+                     }
+                  }
+               }
+               .blurb {
+               	background-color: #CCC;
+               	padding: 1em 2em 1em;
+               	color: #222;
+               	// margin-right: 25px;
+                  h4 {
+                     margin-top: 0;
+                  	font-weight: bolder;
+                  }
+               }
+            }
+         }
+      }
+      .family {
+         .image-container {
+            margin: 0 -15px;
+            img {
+               padding-bottom: 1em;
+            }
+         }
+      }
+      .resume {
+      	padding-left: 0px;
+         h2 {
+            margin-bottom: -1em;
+         }
+         .resume-entry {
+            margin: 4em 0;
+            img {
+            	width: 33.33333%;
+               min-width: 175px;
+            }
+            &:last-of-type {
+               margin-bottom: 0;
+            }
+            &.ualberta {
+               .classes {
+               	background-color: #222;
+               	color: white;
+                  .row {
+                  	padding: .5em 0;
+                     border-bottom: 1px solid #444;
+                     .title {
+                     	font-weight: bolder;
+                     	font-size: 1.2em;
+                     }
+                     .body {
+                        .row:last-child {
+                            border-bottom: none;
+                        }
+                     }
+                     .element {
+                     	color: #888888;
+                     }
+                  }
+               }
+            }
+         }
+      }
+      .sidebar-wrapper {
+         margin-top: 60px;
+         padding: 0;
+         .panel-primary {
+            .panel-heading {
+            	border-bottom: 1px solid #999999;
+               .panel-title {
+               	font-weight: bolder;
+               	font-size: 2em;
+               }
+            }
+            .panel-body {
+            	background-color: #222222;
+            	color: #888888;
+            }
+         }
+      }
+   }
+   &.aboutWork {
+      .bolder {
+      	font-weight: bolder;
+      }
+   }
+   &.footer {
+      margin: 5em 0 0;
+   	background-color: #222;
+   	color: white;
+   	padding: 0em 0;
+      a:not(.social-icon) {
+      	color: inherit;
+      	display: block;
+      }
+      .container-fluid {
+      	margin: 3em 0;
+         .title {
+         	color: #999;
+         }
+      }
+      .social {
+      	font-size: 1.5em;
+      	margin-bottom: 4em;
+         .social-icon {
+         	margin: 0.1em;
+         }
+      }
+   }
+}

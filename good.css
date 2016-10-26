@@ -20,311 +20,180 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-
 html {
-	height: 100%;
-}
+  height: 100%;
+  width: 100%; }
 
 body {
-	position: relative;
-	overflow-x: hidden;
-	height: 100%;
-}
-
-section {
-	margin: 0 5% 0 5%;
-}
-
-.home {
-	height: 100%;
-	min-height: 100%;
-	margin: 0 0 5% 0;
-	background-color: #222;
-}
-
-.home .home-background {
-	position: relative;
-	top: 0;
-	left: 0;
-	background: url("images/kananaskis.jpg") center center no-repeat fixed;
-	width: 100%;
-	height: 100%;
-}
-
-.home .home-background .spacer {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
-.home .home-background .spacer .content {
-	position: relative;
-	top: 50%;
-	padding: 0 25px;
-	text-align: center;
-	color: white;
-	transform: translateY(-50%);
-}
-
-.home .home-background .spacer .content .title span,
-.home .home-background .spacer .content .subtitle span {
-	/*white-space: nowrap;*/
-}
-
-.home .home-background .spacer .content .subtitle a {
-	color: inherit;
-}
-
-.home .home-background .spacer .content .title {
-	font-size: 4em;
-	margin: 0;
-}
-
-.home .home-background .spacer .content .subtitle {
-	font-size: 1.5em;
-	color: #CCC
-}
-
-.home .home-background .continue-arrow {
-	position: absolute;
-	width: 100%;
-	bottom: 2%;
-	color: #999;
-	top: auto;
-	text-align: center;
-	font-size: 1.2em;
-}
-
-.home .home-background .continue-arrow a {
-	color: inherit;
-	text-decoration: none;
-}
-
-.home .home-background .continue-arrow a .down-arrow {
-	margin-top: 0.2em;
-	font-size: 1.5em;
-}
-
-.home .home-background .continue-arrow span {
-	display: block;
-}
-.home .home-background .continue-arrow a:hover span.link {
-	text-decoration: underline;
-}
-
-.panel-primary .panel-heading {
-	border-bottom: 1px solid #999999;
-}
-
-.panel-primary .panel-body {
-	background-color: #222222;
-	color: #888888;
-}
-
-.panel-title {
-	font-weight: bolder;
-	font-size: 2em;
-}
-
-.inline {
-	display: inline-block;
-}
-
-.info .panel-body {
-	display: flex;
-}
-
-.photo-frame {
-	margin: 10px;
-	width: 15em;
-}
-
-.photo-frame img {
-	/*width: inherit;*/
-}
-
-.facts {
-	list-style-type: none;
-	padding: 0 2em 0 0;
-	margin: 0em;
-}
-
-.facts .fact h4 {
-	border-bottom: 1px solid #888888
-}
-
-.facts .fact a {
-	color:inherit;
-}
-
-.email {
-	unicode-bidi:bidi-override;
-	direction: rtl;
-}
-
-.quick-facts {
-	margin: 0 1em 3em;
-}
-
-.quick-facts .quick-facts-heading {
-	border-bottom: 1px solid #999999;
-	font-weight: bolder;
-	font-size: 2em;
-}
-.quick-facts .quick-facts-title {
-	font-weight: bolder;
-	font-size: 1.2em;
-	color: white;
-}
-
-.quick-facts .quick-facts-body {
-	background-color: #222222;
-	color: #888888;
-	padding: 10px 0;
-}
-
-.quick-facts .blurb {
-	background-color: #CCC;
-	padding: 0em 2em 1em;
-	color: #222;
-	margin-right: 25px;
-}
-
-.info .media {
-	margin-top: 0px;
-}
-
-.quick-facts {
-	background-color: #222;
-	padding: 0 20px 10px 20px;
-}
-
-.quick-facts .blurb h4 {
-	font-weight: bolder;
-}
-
-.family img {
-	/*width: 49.5%;*/
-}
-
-.resume img {
-	width: 20%;
-}
-
-.flex {
-	display: flex;
-}
-
-.resume {
-	padding-left: 0px;
-}
-
-.sidebar-wrapper {
-	height: 100%;
-}
-
-.ualberta .classes {
-	background-color: #222;
-	color: white;
-}
-
-.ualberta .classes .title {
-	font-weight: bolder;
-	font-size: 1.2em;
-}
-
-.ualberta .classes .row {
-	padding: .5em 0;
-}
-
-.ualberta .classes .row {
-    border-bottom: 1px solid #444;
-}
-
-.ualberta .classes .body .row:last-child {
-    border-bottom: none;
-}
-
-.ualberta .classes .row .element {
-	color: #888888;
-}
-
-.bolder {
-	font-weight: bolder;
-}
-
-.no-padding {
-	padding: 0;
-}
+  height: 100%;
+  overflow-x: hidden; }
 
 p {
-	padding: 0 15px;
-}
-
-.image-container {
-	padding: 0 0 1em;
-}
-
-.image-container img:first-child {
-	padding: 0 0.25em 0 0;
-}
-
-.image-container img:last-child {
-	padding: 0 0 0 0.25em;
-}
-
-.row img {
-	width: 100%;
-}
-
-.footer {
-	margin: 5em 0 0;
-	background-color: #222;
-	color: white;
-	padding: 0em 0;
-}
-
-.footer a {
-	color: inherit;
-	display: block;
-}
-
-.footer .container-fluid {
-	margin: 3em 0;
-}
-
-.footer .title {
-	color: #999
-}
-
-.footer .social {
-	font-size: 1.5em;
-	margin-bottom: 4em;
-}
-
-.footer .social .social-icon {
-	margin: 0 0.2em;
-}
+  padding: 0 15px; }
 
 a.social-icon {
-	width: 1.3em;
-	height: 1.3em;
-	text-decoration: none;
-	background-color: white;
-	color: #222;
-	display: inline-block;
-	text-align: center;
-	font-size: 1.4em;
-	padding: 0.1em 0;
-	border-radius: 0.3em;
-}
+  width: 1.3em;
+  height: 1.3em;
+  text-decoration: none;
+  background-color: white;
+  color: #222;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 0.1em 0;
+  border-radius: 0.3em; }
+  a.social-icon.social-icon-grey {
+    background-color: #888;
+    color: #222; }
 
-.facts .social-icon {
-	margin: 0 auto;
-}
+.flex {
+  display: flex; }
 
-a.social-icon.social-icon-grey {
-	background-color: #888;
-	color: #222;
-}
+.no-padding {
+  padding: 0; }
+
+.inline {
+  display: inline-block; }
+
+.row img {
+  width: 100%; }
+
+section {
+  margin: 0 5%; }
+  section.home {
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    background: url("images/kananaskis.jpg") center center no-repeat fixed;
+    background-color: #444;
+    overflow: visible; }
+    section.home .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5); }
+    section.home .content {
+      position: relative;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white; }
+      section.home .content .title {
+        margin: 0 20px;
+        font-size: 4em; }
+      section.home .content .subtitle {
+        color: #CCC;
+        font-size: 1.5em; }
+    section.home .continue-arrow {
+      position: absolute;
+      bottom: 0;
+      padding: 20px 0;
+      width: 100%; }
+      section.home .continue-arrow:hover .highlight {
+        background-color: rgba(255, 255, 255, 0.2); }
+      section.home .continue-arrow .highlight {
+        border-radius: 48px;
+        width: 96px;
+        margin: auto; }
+        section.home .continue-arrow .highlight .chevron-down {
+          padding: 40px 0;
+          color: #999;
+          font-size: 16px;
+          width: 100%;
+          text-align: center;
+          left: 1px; }
+  section.aboutMe .info {
+    padding: 0; }
+    section.aboutMe .info .quick-facts {
+      margin: 0 1em 3em;
+      background-color: #222;
+      padding: 0 20px 10px 20px; }
+      section.aboutMe .info .quick-facts .quick-facts-heading {
+        border-bottom: 1px solid #999999;
+        font-weight: bolder;
+        font-size: 2em; }
+        section.aboutMe .info .quick-facts .quick-facts-heading .quick-facts-title {
+          font-weight: bolder;
+          font-size: 1.2em;
+          color: white; }
+      section.aboutMe .info .quick-facts .quick-facts-body {
+        background-color: #222222;
+        color: #888888;
+        padding: 10px 15px; }
+        section.aboutMe .info .quick-facts .quick-facts-body .facts {
+          list-style-type: none; }
+          section.aboutMe .info .quick-facts .quick-facts-body .facts .fact h4 {
+            border-bottom: 1px solid #888888; }
+          section.aboutMe .info .quick-facts .quick-facts-body .facts .fact a:not(.social-icon) {
+            color: inherit; }
+          section.aboutMe .info .quick-facts .quick-facts-body .facts .fact .social-icon {
+            margin: 0 auto; }
+        section.aboutMe .info .quick-facts .quick-facts-body .blurb {
+          background-color: #CCC;
+          padding: 1em 2em 1em;
+          color: #222; }
+          section.aboutMe .info .quick-facts .quick-facts-body .blurb h4 {
+            margin-top: 0;
+            font-weight: bolder; }
+  section.aboutMe .family .image-container {
+    margin: 0 -15px; }
+    section.aboutMe .family .image-container img {
+      padding-bottom: 1em; }
+  section.aboutMe .resume {
+    padding-left: 0px; }
+    section.aboutMe .resume h2 {
+      margin-bottom: -1em; }
+    section.aboutMe .resume .resume-entry {
+      margin: 4em 0; }
+      section.aboutMe .resume .resume-entry img {
+        width: 33.33333%;
+        min-width: 175px; }
+      section.aboutMe .resume .resume-entry:last-of-type {
+        margin-bottom: 0; }
+      section.aboutMe .resume .resume-entry.ualberta .classes {
+        background-color: #222;
+        color: white; }
+        section.aboutMe .resume .resume-entry.ualberta .classes .row {
+          padding: .5em 0;
+          border-bottom: 1px solid #444; }
+          section.aboutMe .resume .resume-entry.ualberta .classes .row .title {
+            font-weight: bolder;
+            font-size: 1.2em; }
+          section.aboutMe .resume .resume-entry.ualberta .classes .row .body .row:last-child {
+            border-bottom: none; }
+          section.aboutMe .resume .resume-entry.ualberta .classes .row .element {
+            color: #888888; }
+  section.aboutMe .sidebar-wrapper {
+    margin-top: 60px;
+    padding: 0; }
+    section.aboutMe .sidebar-wrapper .panel-primary .panel-heading {
+      border-bottom: 1px solid #999999; }
+      section.aboutMe .sidebar-wrapper .panel-primary .panel-heading .panel-title {
+        font-weight: bolder;
+        font-size: 2em; }
+    section.aboutMe .sidebar-wrapper .panel-primary .panel-body {
+      background-color: #222222;
+      color: #888888; }
+  section.aboutWork .bolder {
+    font-weight: bolder; }
+  section.footer {
+    margin: 5em 0 0;
+    background-color: #222;
+    color: white;
+    padding: 0em 0; }
+    section.footer a:not(.social-icon) {
+      color: inherit;
+      display: block; }
+    section.footer .container-fluid {
+      margin: 3em 0; }
+      section.footer .container-fluid .title {
+        color: #999; }
+    section.footer .social {
+      font-size: 1.5em;
+      margin-bottom: 4em; }
+      section.footer .social .social-icon {
+        margin: 0.1em; }
+
+/*# sourceMappingURL=good.css.map */
