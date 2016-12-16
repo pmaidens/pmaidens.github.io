@@ -115,8 +115,7 @@ SOFTWARE.
                                             onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01HweekZegb-EaXtU-9yoPHg\x3d\x3d\x26c\x3dGZsTezavCEZNdzB3n4OfLA_vFz5icPXhkkVwJWqJNjE\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;"
                                             title="Reveal this e-mail address"
                                         >
-                                            I hate spam, so click here to prove to me
-                                            that you aren't a robot... Then we can talk.
+                                            Are you a human? Perfect! Click here to get my email.
                                         </a>
                                     </li>
                                     <li class="fact">
@@ -171,14 +170,25 @@ SOFTWARE.
             <div id="familyLife" class="family">
                 <h2>Me and My Family</h2>
                 <div class="container-fluid image-container">
-                    <img class="col-sm-6 col-xs-12" src="images/Family.jpg" alt="The Maidens Family"/>
-                    <img class="col-sm-6 col-xs-12" src="images/Wedding.jpg" alt="Wedding Picture"/>
+                    <div class="col-sm-6 col-xs-12 imageSwap">
+                        <img class="family1" src="images/Family1.jpg" alt="The Maidens Family 1"/>
+                        <img class="family2" src="images/Family2.jpg" alt="The Maidens Family 2"/>
+                        <img class="family3" src="images/Family3.jpg" alt="The Maidens Family 3"/>
+                        <div class="spacer"></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 imageSwap">
+                        <img class="wedding1" src="images/Wedding1.jpg" alt="Wedding Picture 1"/>
+                        <img class="wedding2" src="images/Wedding2.jpg" alt="Wedding Picture 2"/>
+                        <img class="wedding3" src="images/Wedding3.jpg" alt="Wedding Picture 3"/>
+                        <div class="spacer"></div>
+                    </div>
                 </div>
                 <p>
                     The only way you could accuse me of being a work-a-holic,
                     would be by counting my family as a job; I love spending
-                    time with my family! I have a <span id="ageWest"></span>
-                    year old son, whom I am super proud of,
+                    time with my family! I have a <span id="age1"></span>
+                    year old son whom I am super proud of, an adorable
+                    <span id="age2"></span> month old daughter,
                     a beautiful and loving wife, and an energetic
                     yellow labrador retriever. My family is great at keeping me
                     on my toes; it is never a dull moment around our house. Our
@@ -191,7 +201,7 @@ SOFTWARE.
                     important, and my career and my family life each give me
                     different ways to grow. Growing in these two different
                     spaces has allowed me to become a well-rounded person. If you are
-                    looking for someone who will work 140 hours a week, and live
+                    looking for someone who will work 140 hours a week and live
                     out of a van in the parking lot, move on to the next
                     candidate. However, if you are looking for someone who has
                     great interpersonal skills, values other people's time, has
@@ -204,6 +214,7 @@ SOFTWARE.
         <div class="container-fluid no-padding">
             <div id="resume" class="resume col-md-9">
                 <h2>My Resum&#233</h2>
+                <div class="updated">Last update on December 16<sup>th</sup>, 2016</div>
                 <div class="resume-entry intuit" id="intuit">
                     <h3><img src="images/intuit.png" alt="Intuit Inc." /></h3>
                     <div class="margin">
@@ -223,7 +234,7 @@ SOFTWARE.
                             Online using cutting edge technology. Through this
                             experience, I learned the ins and
                             outs of web application development. I contributed to
-                            the <b>Single Page Application</b> frontend and developed
+                            the Single Page Application frontend and developed
                             RESTful backend services. Scalability is always a
                             concern when developing applications for over 1 million
                             users, and my work on QBO taught me how to
@@ -243,11 +254,19 @@ SOFTWARE.
                         </p>
                         <h4>Full-time Software Developer</h4>
                         <p>
-                            Starting May 2<sup>nd</sup>, I will be returning to Intuit
-                            to start as a full-time software developer. I am super
-                            excited! Check back again soon; I will be updating this
-                            section as I learn new things!
+                            After completing my bachelor's degree, I returned to Intuit to work as a
+                            full time software developer. Since then, I have learned
+                            an awful lot! I am currently working as the Scrum Master
+                            for first time use. Our team has made significant
+                            improvemnts to the product in a very short period of time,
+                            and I am super proud of the work that we did. If you
+                            want to see our work, sign up for a free trial of QuickBooks
+                            Online; the portion I worked on is the setup interview.
+                            While I can't tell you an exact dollar figure of the impact
+                            our team had (sorry, trade secret), I can tell you that
+                            it was enough that I could have retired with it.
                         </p>
+                        <!-- TODO: Add more info here -->
                     </div>
                 </div>
                 <div class="resume-entry ualberta" id="ualberta">
@@ -256,16 +275,28 @@ SOFTWARE.
                     <h5>Minor in Business</h5>
                     <p>
                         The university helped me grow in two ways. First, my degree
-                        gave me the foundation of computing science. I had the
-                        opportunity to learn from world class professors and broaden
-                        my understanding of computing science. Secondly, my minor in
-                        business gave me the opportunity to develop business,
-                        leadership, and interpersonal skills. With my business
-                        coarses, I focused on topics surrounding leadership and
-                        entrepreneuship, which gave me great exposure to important
-                        topics for any business, such as team building and how to
-                        innovate.
+                        gave me the foundation of my knowledge of computing science.
+                        I had the opportunity to learn from world class professors
+                        and broaden my understanding of computing science. I
+                        learned everything from RSA encryption on an
+                        <a href="https://www.arduino.cc/en/Guide/Introduction">Arduino</a>
+                        (that was actually the first program I ever wrote) to
+                        Map-Reduce on an eight node distributed system.
                     </p>
+                    <p>
+                        Secondly, my minor in business gave me the opportunity
+                        to develop business, leadership, and interpersonal skills.
+                        With my business courses, I focused on topics surrounding
+                        leadership and entrepreneuship, which gave me great exposure
+                        to important topics for any business, such as team building
+                        and how to innovate.
+                    </p>
+                    <!-- TODO: Talk more about this
+                    <p>
+                        Even after graduating with my bachelor's degree, I continue
+                        to be curious and look to learn wherever I can.
+                    </p>
+                    -->
                     <div class="container-fluid classes">
                         <div class="row">
                             <div class="col-xs-12 title">Some of my favorite classes were:</div>
@@ -468,17 +499,17 @@ SOFTWARE.
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script>
-        function calculateAge(birthDate) {
-            var today = new Date();
-            var age = today.getFullYear() - birthDate.getFullYear();
-            var month = today.getMonth() - birthDate.getMonth();
-            if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
-                age--;
-            }
-            return age;
+        function calculateYears(birthDate) {
+            var age = new Date(Date.now() - birthDate.getTime());
+            return Math.abs(age.getUTCFullYear() - 1970);
         }
-        $("#age").html(calculateAge(new Date(1993, 04, 06)));
-        $("#ageWest").html(calculateAge(new Date(2012, 05, 19)));
+        function calculateMonths(birthDate) {
+            var age = new Date(Date.now() - birthDate.getTime());
+            return 1 + age.getUTCMonth() + (age.getUTCFullYear() - 1970) * 12;
+        }
+        $("#age").html(calculateYears(new Date(1993, 04, 06)));
+        $("#age1").html(calculateYears(new Date(2012, 05, 19)));
+        $("#age2").html(calculateMonths(new Date(2016, 11, 8)));
 
         var navHeight = $(".navbar").height();
 

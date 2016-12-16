@@ -20,6 +20,50 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+@-webkit-keyframes FadeInOut {
+  0% {
+    opacity: 1; }
+  30% {
+    opacity: 1; }
+  33% {
+    opacity: 0; }
+  96% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes FadeInOut {
+  0% {
+    opacity: 1; }
+  30% {
+    opacity: 1; }
+  33% {
+    opacity: 0; }
+  96% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-o-keyframes FadeInOut {
+  0% {
+    opacity: 1; }
+  30% {
+    opacity: 1; }
+  33% {
+    opacity: 0; }
+  96% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes FadeInOut {
+  0% {
+    opacity: 1; }
+  30% {
+    opacity: 1; }
+  33% {
+    opacity: 0; }
+  96% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 html {
   height: 100%;
   width: 100%; }
@@ -30,6 +74,9 @@ body {
 
 p {
   padding: 0 15px; }
+
+i {
+  font-style: italic; }
 
 a.social-icon {
   width: 1.3em;
@@ -139,17 +186,59 @@ section {
             font-weight: bolder; }
   section.aboutMe .family .image-container {
     margin: 0 -15px; }
-    section.aboutMe .family .image-container img {
-      padding-bottom: 1em; }
+    section.aboutMe .family .image-container .imageSwap {
+      position: relative;
+      margin-bottom: 1em; }
+      section.aboutMe .family .image-container .imageSwap .spacer {
+        margin-top: 40.83333%; }
+      section.aboutMe .family .image-container .imageSwap img {
+        position: absolute;
+        left: 15px;
+        width: calc(100% - 30px);
+        -webkit-animation-name: FadeInOut;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 30s;
+        -moz-animation-name: FadeInOut;
+        -moz-animation-timing-function: ease-in-out;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-duration: 30s;
+        -o-animation-name: FadeInOut;
+        -o-animation-timing-function: ease-in-out;
+        -o-animation-iteration-count: infinite;
+        -o-animation-duration: 30s;
+        animation-name: FadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 30s; }
+        section.aboutMe .family .image-container .imageSwap img:nth-of-type(1) {
+          -webkit-animation-delay: 20s;
+          -moz-animation-delay: 20s;
+          -o-animation-delay: 20s;
+          animation-delay: 20s; }
+        section.aboutMe .family .image-container .imageSwap img:nth-of-type(2) {
+          -webkit-animation-delay: 10s;
+          -moz-animation-delay: 10s;
+          -o-animation-delay: 10s;
+          animation-delay: 10s; }
+        section.aboutMe .family .image-container .imageSwap img:nth-of-type(3) {
+          -webkit-animation-delay: 0;
+          -moz-animation-delay: 0;
+          -o-animation-delay: 0;
+          animation-delay: 0; }
   section.aboutMe .resume {
     padding-left: 0px; }
     section.aboutMe .resume h2 {
       margin-bottom: -1em; }
+    section.aboutMe .resume .updated {
+      margin: 30px 0 -30px;
+      color: grey; }
     section.aboutMe .resume .resume-entry {
       margin: 4em 0; }
       section.aboutMe .resume .resume-entry img {
         width: 33.33333%;
-        min-width: 175px; }
+        max-width: 200px;
+        min-width: 125px; }
       section.aboutMe .resume .resume-entry:last-of-type {
         margin-bottom: 0; }
       section.aboutMe .resume .resume-entry.ualberta .classes {
