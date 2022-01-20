@@ -9,6 +9,7 @@ title:            Peter Maidens
 tagline:          My personal website
 description:      Father, maker, and software developer extraordinaire!
 url:              http://www.petermaidens.com
+baseurl:          ""
 
 author:
   name:           'Peter Maidens'
