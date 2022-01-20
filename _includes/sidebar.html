@@ -26,7 +26,7 @@
         {% endif %}
       {% endfor %}
 
-      {% assign resume_url = site.baseurl | append: "resume/" %}
+      {% assign resume_url = site.url | append: "/resume/" %}
       <a class='sidebar-nav-item{% if page.url == resume_url %} active{% endif %}' href='{{ resume_url }}'>My Resume</a>
     </nav>
     <div class="copyright">
