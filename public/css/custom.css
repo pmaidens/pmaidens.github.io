@@ -1,0 +1,23 @@
+.circle-image-vertical {
+    height: 0;
+    padding-bottom: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.circle-image-vertical img {
+    width: 100%;
+    height: auto;
+    margin-top: -37%;
+}
+@media (min-width: 48em) {
+    .sidebar-sticky-copy {
+        margin-top: 2em;
+    }
+    .sidebar-sticky-copy .copyright {
+      position: absolute;
+      right:  1rem;
+      bottom: 1rem;
+      left:   2rem;
+    }
+  }

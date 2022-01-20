@@ -1,17 +1,12 @@
-License information
-====================
+## Build instructions
 
-## Images and Icons
-All images and icons are copyrighted by their respective owners. They are used here with permission of their owners. For more information, contact Peter Maidens.
+For development:
 
-## Bootstrap
-Bootstrap and all it's components are Copyright 2011-2016 Twitter, Inc.
-It is licensed under the MIT license.
+`run.sh`
 
-## reset.css
-Reset.css is copyrighted by its respective owners.
-It has no license and is in the public domain.
+## License
 
-## Others
-good.css, good.html, ugly.css, and ugly.html are all owned by Peter Maidens.
-They are licensed under the MIT license.
+This website was built using Hyde. Hyde is licensed under MIT. The Hyde license can be found under the [licenses folder](licenses/HYDE.md).
+Additions were made to the website by Peter Maidens. These additions are released under the MIT license. This license can be found under the [license folder](license/LICENSE.md).
+I have used photos on the site that were created by others. These photos were used with permission, but remain the property of their respective owners.
+

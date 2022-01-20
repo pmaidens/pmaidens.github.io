@@ -1,0 +1,1 @@
+docker build . --tag=jekyll/local && docker run -p 8000:4000 -it jekyll/local jekyll serve --watch --drafts
