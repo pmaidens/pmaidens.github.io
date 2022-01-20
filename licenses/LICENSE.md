@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 # Released under MIT License
 
 Copyright (c) 2022 Peter Maidens.
