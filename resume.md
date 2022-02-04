@@ -4,9 +4,13 @@ layout: default
 
 ## Peter Maidens
 
-*Software Developer*
+*Lead Software Developer and Scrum Master*
 
 [LinkedIn](https://www.linkedin.com/in/peter-maidens/) | [Website](http://www.petermaidens.com) | [GitHub](https://github.com/pmaidens) | [DEV.to](https://dev.to/pmaidens) | [Thingiverse](https://www.thingiverse.com/gyrocopter/designs)
+
+### Summary
+
+Lead Software Developer with years of experience managing teams of up to 12 developers across North America working on highly scalable features delivered to over 7 million users.
 
 ### Work Experience
 
@@ -15,7 +19,7 @@ layout: default
 *(Aug 2018 - Present)*
 
 - Leading a cross functional development team with up to 12 developers distributed across North America building multiple highly scalable features simultaneously, while coordinating with numerous external teams in order to deliver towards our business' highest priorities.
-- Architecting company wide, mission critical capabilities that power experiences that are responsible for supporting 7 million active users by using Kubernetes to enable multiple availability zone deployments in Amazon Web Services, among other things.
+- Architecting company wide, mission critical capabilities that power experiences that are responsible for supporting over 7 million active users by using Kubernetes to enable multiple availability zone deployments in Amazon Web Services, among other things.
 - Creating alignment at all levels throughout the organization to ensure smooth delivery of the features and capabilities our team is responsible for.
 - Participating in recruiting and hiring programs for full time employees and actively mentoring colleagues.
 - Directly responsible for hiring, onboarding, and supervising two remote contract workers for our team that supported our team during several large releases throughout a 9 month period.
@@ -26,7 +30,7 @@ layout: default
 
 - Used Typescript, React, Redux, Node.js, and Java Spring, to grow my knowledge of micro front end and micro service architectures while building full stack features.
 - Took on the responsibility of becoming a Scrum Master and leading a team of up to 8 developers.
-- Promoted a quality mindset by championing new testing frameworks and new testing philosophies, and encouraging good testing principles in code reviews.
+- Promoted a quality mindset by championing new testing frameworks and new testing philosophies, and encouraging good testing principles in code reviews as well as the importance of observability and good DevOps practices.
 
 **Software Developer (Intern) @ Intuit**
 
