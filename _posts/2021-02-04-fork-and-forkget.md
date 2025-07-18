@@ -4,7 +4,7 @@ title: fork and forkget
 ---
 
 
-[Picture of an old fork - Cover Image](../public/assets/fork-and-frokget.webp)
+![Picture of an old fork - Cover Image](/public/assets/fork-and-frokget.webp)
 
 ###### Photo credit: "Floating fork" by matley0 is licensed under CC BY-NC-ND 2.0
 
