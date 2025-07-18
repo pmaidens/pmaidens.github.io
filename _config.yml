@@ -2,7 +2,7 @@
 highlighter:      rouge
 
 # Permalinks
-permalink:        /blog/:year/:month/:day/:title/
+permalink:        pretty
 
 # Setup
 title:            Peter Maidens

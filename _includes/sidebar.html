@@ -29,8 +29,12 @@
       {% assign resume_url = site.url | append: "/resume/" %}
       <a class='sidebar-nav-item{% if page.url == resume_url %} active{% endif %}' href='{{ resume_url }}'>My Resume</a>
       
-      {% assign blog_url = site.url | append: "/blog/" %}
-      <a class='sidebar-nav-item{% if page.url == blog_url %} active{% endif %}' href='{{ blog_url }}'>Blog</a>
+      {% if site.posts.size > 0 %}
+        {% assign latest_post = site.posts.first %}
+        <a class='sidebar-nav-item{% if page.url == latest_post.url %} active{% endif %}' href='{{ latest_post.url }}'>Blog</a>
+      {% else %}
+        <a class='sidebar-nav-item' href='/blog/'>Blog</a>
+      {% endif %}
     </nav>
     <div class="copyright">
       <p>&copy; <span id="copyright-year"></span>. All rights reserved.</p>

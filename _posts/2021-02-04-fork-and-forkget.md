@@ -1,6 +1,7 @@
 ---
 layout: post
 title: fork and forkget
+permalink: /blog/:year/:month/:day/:title/
 ---
 
 
