@@ -1,1 +1,1 @@
-docker build . --tag=jekyll/local && docker run -p 4000:4000 -it jekyll/local jekyll serve --watch --drafts
+docker build . --tag=jekyll/local && docker run -p 4000:4000 -it jekyll/local jekyll serve --watch --drafts --config _config.yml,_config_dev.yml --host 0.0.0.0
