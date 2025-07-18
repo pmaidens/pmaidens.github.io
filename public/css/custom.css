@@ -83,6 +83,23 @@
     margin-top: 0.2rem;
 }
 
+/* Wider content area specifically for blog pages */
+.blog-page .content {
+    max-width: none;
+}
+
+@media (min-width: 48em) {
+    .blog-page .content {
+        max-width: 60rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .blog-page .content {
+        max-width: 65rem;
+    }
+}
+
 @media (max-width: 48em) {
     .blog-content {
         flex-direction: column;

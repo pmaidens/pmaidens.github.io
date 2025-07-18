@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="theme-base-my">
+  <body class="theme-base-my{% if page.layout == 'post' or page.layout == 'posts' %} blog-page{% endif %}">
 
     {% include sidebar.html %}
 
