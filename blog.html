@@ -1,4 +1,25 @@
 ---
-layout: posts
+layout: default
 title: Blog
 ---
+
+<script>
+  // Redirect to the most recent post
+  {% if site.posts.size > 0 %}
+    window.location.href = "{{ site.posts.first.url }}";
+  {% else %}
+    // If no posts, show a message
+    document.body.innerHTML = '<div class="content container"><div class="page"><h1>Blog</h1><p>No posts yet. Check back soon!</p></div></div>';
+  {% endif %}
+</script>
+
+<noscript>
+  <div class="page">
+    <h1 class="page-title">Blog</h1>
+    {% if site.posts.size > 0 %}
+      <p>Please enable JavaScript to be redirected to the latest post, or <a href="{{ site.posts.first.url }}">click here</a> to go directly to the most recent post.</p>
+    {% else %}
+      <p>No posts yet. Check back soon!</p>
+    {% endif %}
+  </div>
+</noscript>
