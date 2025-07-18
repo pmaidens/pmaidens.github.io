@@ -30,7 +30,10 @@
       <a class='sidebar-nav-item{% if page.url == resume_url %} active{% endif %}' href='{{ resume_url }}'>My Resume</a>
     </nav>
     <div class="copyright">
-      <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+      <p>&copy; <span id="copyright-year"></span>. All rights reserved.</p>
     </div>
+    <script>
+      document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
   </div>
 </div>
